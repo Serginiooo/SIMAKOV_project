@@ -1,3 +1,4 @@
+# Исходные материалы
 warehouse = {
     "Кирпич": {"quantity": 5000, "price": 12.50, "min_quantity": 1000},
     "Цемент": {"quantity": 120, "price": 450.00, "min_quantity": 50},
@@ -5,7 +6,7 @@ warehouse = {
     "Арматура": {"quantity": 30, "price": 48000.00, "min_quantity": 20},
     "Бетон": {"quantity": 45, "price": 4200.00, "min_quantity": 15}
 }
-
+# Подготовка таблицы
 print("Материал    Кол-во  Цена     Мин.   Стоимость")
 total = 0
 max_cost = 0
@@ -28,7 +29,7 @@ for name, data in warehouse.items():
 print(f"\nОбщая стоимость: {total:.2f} руб")
 print(f"Самый дорогой: {max_name} ({max_cost:.2f} руб)")
 print("Критические остатки:", critical)
-
+# Выдача материала
 material = "Цемент"
 amount = 25
 if warehouse[material]["quantity"] >= amount:

@@ -8,7 +8,6 @@ top_season = seasons.idxmax()
 top_count = seasons.max()
 
 print(f'Всего наблюдений  > 500: {len(hot)}')
-print(f' СЕЗОН: {top_season} ')
-print(f'поездок: {top_count}')
-
+print(f'Самый популярный сезон: {top_season} ')
+print(f'В этот сезон поездок: {top_count}')
 

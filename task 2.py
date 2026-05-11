@@ -1,6 +1,3 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-
 df = pd.read_csv('5 train.csv')
 
 seasonal = df.groupby('season')[['casual', 'registered']].mean()
